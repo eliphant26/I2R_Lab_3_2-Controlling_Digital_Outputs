@@ -1,0 +1,34 @@
+int GreenLED = 7;
+int BlueLED = 6;
+int on1 = 200;
+int off1 = 200;
+
+void setup() {
+  pinMode(BlueLED,OUTPUT);
+  pinMode(GreenLED,OUTPUT);
+  digitalWrite(GreenLED, HIGH);
+  delay(200);
+  digitalWrite(GreenLED,LOW);
+  delay(200);
+  digitalWrite(GreenLED, HIGH);
+  delay(200);
+  digitalWrite(GreenLED,LOW);
+  delay(200);
+  digitalWrite(BlueLED, HIGH);
+  delay(200);
+  digitalWrite(BlueLED,LOW);
+  delay(200);
+  digitalWrite(BlueLED, HIGH);
+  delay(200);
+  digitalWrite(BlueLED,LOW);
+}
+
+void loop() {
+  digitalWrite(GreenLED, HIGH); 
+  delay(620);
+  digitalWrite(GreenLED,LOW);
+  delay(0);
+  digitalWrite(BlueLED,HIGH);
+  delay(620);
+  digitalWrite(BlueLED,LOW);
+}
